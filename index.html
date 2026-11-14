@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website demo triển khai tự động với GitHub Actions và GitHub Pages.">
+    <title>Nguyễn Đình Lực - 1822041377 | CI/CD với GitHub Actions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Trang chủ">BUILD<span>→</span>DEPLOY</a>
+        <span class="status"><span class="status-dot"></span> GitHub Pages</span>
+      </header>
+
+      <section class="hero" aria-labelledby="student-name">
+        <p class="eyebrow"><span class="eyebrow-line"></span> CI/CD DEMO · GITHUB ACTIONS</p>
+        <h1 id="student-name">Nguyễn Đình Lực - 1822041377</h1>
+        <p class="intro">
+          Mỗi lần cập nhật mã nguồn, GitHub Actions sẽ tự động kiểm tra website
+          trước khi xuất bản phiên bản mới lên GitHub Pages.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pipeline">Khám phá pipeline <span aria-hidden="true">↓</span></a>
+          <span class="version">PHIÊN BẢN 1.0</span>
+        </div>
+        <div class="orb orb-one" aria-hidden="true"></div>
+        <div class="orb orb-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="pipeline" id="pipeline" aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TỪ MÃ NGUỒN ĐẾN WEBSITE</p>
+            <h2 id="pipeline-title">Pipeline triển khai</h2>
+          </div>
+          <p class="section-note">Tự động · Có kiểm soát · Công khai</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">01</span>
+            <h3>Push code</h3>
+            <p>Đẩy thay đổi lên nhánh <code>main</code> của repository.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">02</span>
+            <h3>Check</h3>
+            <p>Xác nhận đủ tệp website và thẻ <code>&lt;title&gt;</code> hợp lệ.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">03</span>
+            <h3>Deploy</h3>
+            <p>Chỉ khi kiểm tra thành công, website mới được xuất bản.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>THỰC HÀNH DEVOPS · GITHUB ACTIONS</span>
+        <span>© <span id="current-year"></span> Nguyễn Đình Lực</span>
+      </footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
